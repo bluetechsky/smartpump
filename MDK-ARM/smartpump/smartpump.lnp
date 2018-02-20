@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"smartpump\startup_stm32f103xb.o"
+"smartpump\main.o"
+"smartpump\stm32f1xx_hal_msp.o"
+"smartpump\stm32f1xx_it.o"
+"smartpump\nokia_5110.o"
+"smartpump\hinh_anh.o"
+"smartpump\stm32f1xx_hal_flash.o"
+"smartpump\stm32f1xx_hal.o"
+"smartpump\stm32f1xx_hal_tim_ex.o"
+"smartpump\stm32f1xx_hal_gpio.o"
+"smartpump\stm32f1xx_hal_flash_ex.o"
+"smartpump\stm32f1xx_hal_rcc.o"
+"smartpump\stm32f1xx_hal_rcc_ex.o"
+"smartpump\stm32f1xx_hal_gpio_ex.o"
+"smartpump\stm32f1xx_hal_pwr.o"
+"smartpump\stm32f1xx_hal_dma.o"
+"smartpump\stm32f1xx_hal_cortex.o"
+"smartpump\stm32f1xx_hal_usart.o"
+"smartpump\stm32f1xx_hal_tim.o"
+"smartpump\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "smartpump\smartpump.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "smartpump.map" -o smartpump\smartpump.axf
